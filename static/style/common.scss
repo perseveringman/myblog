@@ -1,0 +1,27 @@
+$deepblue: #2c3e50;
+$deepgreen: #55967e;
+$deepgray: #6d819c;
+$deepwhite: #e4e7ec;
+
+@mixin box-shadow($param...) {
+	box-shadow: $param;
+	-webkit-box-shadow: $param;
+} 
+
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: $deepblue;
+}
+
+a{
+	text-decoration:none;
+}
+hr{
+	margin: 3.25em 0;
+	border: 0;
+	border-top: 1px solid $deepwhite;
+}

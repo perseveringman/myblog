@@ -1,0 +1,40 @@
+@import "./common.scss";
+.blog-intro{
+	padding:100px 0;
+	h1{
+		font-size: 55px;
+		font-weight: bold;
+	}
+	p{
+		font-size:20px;
+	}
+}
+.article-list{
+	text-align:left;
+	.article-item{
+		width:60%;
+		margin:0 auto;
+		img{
+			width:100%;
+		}
+		h2{
+			color: $deepgreen;
+		}
+		em{
+			color: $deepgray;
+		}
+	}
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+a {
+  color: #42b983;
+}

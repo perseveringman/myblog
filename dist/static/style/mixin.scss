@@ -1,0 +1,39 @@
+/* 响应式布局 */
+
+// @function torem($px){//$px为需要转换的字号
+//     @return $px / $current-size * 1rem; //40px为根字体大小
+// }
+
+// @function getRootSize(){
+// 	@return 
+// }
+@mixin font-size($fs-map) {
+	@each $fs-breakpoint, $fs-font-size in $fs-map {
+		@if $fs-breakpoint == null {
+			font-size: $fs-font-size;
+		} @else {
+			@media screen and (min-width: $fs-breakpoint) {
+				font-size: $fs-font-size;
+			}
+		}
+	}
+}
+
+
+
+/* css3动画 */
+@mixin box-shadow($param...) {
+	box-shadow: $param;
+	-webkit-box-shadow: $param;
+} 
+
+@mixin translate3d($param...) {
+	-webkit-transform: translate3d($param);
+    transform: translate3d($param);
+}
+
+@mixin transformNone() {
+	-webkit-transform: none;
+    transform: none;
+}
+

@@ -2,6 +2,7 @@ import Vue from 'vue';
 import App from './App';
 import Home from './components/articleList';
 import Archive from './components/Archive';
+import article from './components/article';
 import vueRouter from 'vue-router';
 import vueResource from 'vue-resource';
 
@@ -23,6 +24,10 @@ const router = new vueRouter(
 			{
 				path: '/archive',
 				component: Archive
+			},
+			{
+				path: '/article',
+				component: article
 			},
 			{
 				path: '*',

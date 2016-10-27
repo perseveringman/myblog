@@ -1,0 +1,48 @@
+@import "variable.scss";
+@import "mixin.scss";
+
+html{ 
+	@include font-size($html-font-size);
+}
+p, li{
+	@include font-size($p-font-size);
+}
+h1{
+	font-size: 2.1rem;
+}
+h2{
+	font-size: 1.6rem;
+}
+h3{
+	font-size: 1.4rem;
+}
+h4{
+	font-size: 1.2rem;
+}
+h5{
+	font-size: 1.1rem;
+}
+h1,h2,h3,h4,h5{
+	margin: 0.825rem 0;
+}
+pre{
+	margin: 0.825rem 0;
+	padding: 1rem;
+	font-size: 0.8rem;
+}
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: $deepblue;
+}
+
+a{
+	text-decoration:none;
+}
+hr{
+	margin: 3.25em auto;
+	border: 0;
+	border-top: 1px solid $deepwhite;
+}

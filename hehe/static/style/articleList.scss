@@ -1,0 +1,57 @@
+@import "./common.scss";
+.blog-intro{
+	padding:5rem 0;
+	h1{
+		font-size: 2.7rem;
+		font-weight: bold;
+	}
+	p{
+		font-size:0.95rem;
+	}
+}
+.article-list{
+	text-align:left;
+	.article-container{
+		hr{
+			width: 100%;
+		}
+	}
+	.article-item{
+		width:60%;
+		margin:0 auto;
+		img{
+			width:100%;
+			cursor: pointer;
+		}
+		h2{
+			color: $deepgreen;
+			cursor: pointer;
+		}
+		em{
+			color: $deepgray;
+		}
+	}
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+a {
+  color: #42b983;
+}
+
+@media screen and (max-width: 480px) {
+	.article-list{
+
+		.article-item {
+			width:80%;
+		}
+
+	}
+}

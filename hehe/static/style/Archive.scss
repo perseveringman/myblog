@@ -1,0 +1,36 @@
+@import "./common.scss";
+.archive-container{
+	min-height: 400px;
+	h2{
+		margin-top: 2em;
+		font-size: 40px;
+	}
+	.archive-item{
+		.archive-year-list{
+			list-style: none;
+			padding: 0;
+			width: 70%;
+			margin: 0 auto;
+			.article-item{
+				margin: 10px 0; 
+				font-size: 18px;
+				h4{
+					margin: 0;
+					cursor: pointer;
+					display: inline-block;
+					color: $deepgreen;
+					&:hover{
+						color: $deepblue;
+					}
+				}
+				.post-info{
+					font-size: 16px;
+				}
+
+			}
+			hr{
+				width: 30%;
+			}
+		}
+	}
+}
